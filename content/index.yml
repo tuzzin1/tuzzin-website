@@ -20,52 +20,52 @@ hero:
       to: https://github.com/nuxt-ui-pro/landing
       target: _blank
 section:
-  title: '[Revolutionize]{.text-(--ui-primary)} your coding experience'
-  description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
+  title: We are [Tuzzin Technology]{.text-(--ui-primary)} Solution Provider for Banks
+  description: Transform your development with our personalized banking solutions.
   images:
     mobile: /images/macbook-mobile.svg
     desktop: /images/macbook.svg
   features:
-    - title: Optimize your focus time
-      description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
+    - title: ''
+      description: Tuzzin enables Technology Transformation for Banks in delivering absolute compliance, seamless customer experience, business efficiency and actionable insights. At Tuzzin we deliver Technology Outcomes- Affordable, Better and Faster.
       class: border-l border-(--ui-primary) pl-4
-    - title: Track your best coding hours
-      description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
+    - title: ''
+      description: Our Experts build solutions that cater not only to Bank’s needs, but also ensure smooth change management and adoption by Bank’s staff. We guide Banks in their journey as a trusted partner that constantly innovates to generate value.
       class: border-l border-(--ui-border) pt-4 pl-4
-    - title: Improve workflow efficiency
-      description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
+    - title: ''
+      description: Our Solutions are built with strong domain knowledge, seamless usability, engaging user experience and with comprehensive features. All of this packaged beautifully with an affordable price and an awesome service from our experts.
       class: border-l border-(--ui-border) pt-4 pl-4
 features:
-  title: Take control of your [productivity]{.text-(--ui-primary)}
-  description: Make every coding session count with smart analytics and workflow optimization.
+  title: Our [Banking Solutions Portfolio]{.text-(--ui-primary)}
+  description: At Tuzzin our Experts keep building unique Products in-line with Banking trends. Our Products are creating a Buzz in the market. They are built with unique components that can be readily used to accelerate your Idea. You can save money by choosing a full product or a piece of it. All the Products come with our guarantee and full service warranty.
   features:
-    - title: AI-Powered Focus Tracking
-      description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
+    - title: YoKYC
+      description: Best in class automated CKYC Solution with in-built document management system.
       icon: i-lucide-wand-sparkles
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-    - title: Distraction Alerts
-      description: Get notified when your focus drifts and bring your attention back.
+    - title: YoInstaLoans
+      description: Multi-channel Loan Origination System. Fully configurable and parameter-ized.
       icon: i-lucide-bell-ring
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-    - title: Smart Code Snippets
-      description: Save and reuse frequently used code blocks for efficiency.
+    - title: YoRecovery
+      description: 360 Degree NPA Recovery tracking system with automated communication and smart alerts.
       icon: i-lucide-code-xml
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-    - title: Deep Work Mode
-      description: Block distractions and set structured coding sessions with built-in Pomodoro timers.
+    - title: YoCTS
+      description: CTS Merge & Inward Clearing.
       icon: i-lucide-moon
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-    - title: Collaborative Insights
-      description: Sync your workflow with teammates and see when they are most productive.
+    - title: YoLead
+      description: Track every lead across Branches and respond to ever lead within 24 hours flat.
       icon: i-lucide-mouse-pointer-2
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-    - title: Performance Analytics
-      description: Track your coding metrics and get insights to boost your speed and code quality.
+    - title: Much More...
+      description: See what else we have got for you. Click Here!
       icon: i-lucide-chart-line
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
