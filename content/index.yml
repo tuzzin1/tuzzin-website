@@ -1,24 +1,10 @@
 seo:
   title: Tuzzin - Technology Buzzing
   description: Default & reliable technology partner for hundreds of banks. We are a banking software solutions provider in India.
-title: Tuzzin - [Technology Buzzing]{.text-(--ui-primary)}
-description: Default & reliable technology partner for hundreds of banks. We are a banking software solutions provider in India.
+title: Default & reliable technology partner for hundreds of banks. We are a [banking software solutions provider]{.text-(--ui-primary)} in India.
+description: ''
 hero:
-  links:
-    - label: Getting Started
-      icon: i-lucide-arrow-right
-      trailing: true
-      variant: subtle
-      to: https://ui.nuxt.com/getting-started/installation/pro/nuxt
-      target: _blank
-      size: xl
-    - label: Clone on GitHub
-      icon: i-simple-icons-github
-      size: xl
-      color: neutral
-      variant: ghost
-      to: https://github.com/nuxt-ui-pro/landing
-      target: _blank
+  links: []
 section:
   title: We are [Tuzzin Technology]{.text-(--ui-primary)} Solution Provider for Banks
   description: Transform your development with our personalized banking solutions.
