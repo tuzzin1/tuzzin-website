@@ -4,7 +4,9 @@ seo:
 title: Default & reliable technology partner for hundreds of banks. We are a [banking software solutions provider]{.text-(--ui-primary)} in India.
 description: ''
 hero:
-  links: []
+    images:
+      mobile: /images/macbook-mobile.svg
+      desktop: /images/macbook.svg
 section:
   title: We are [Tuzzin Technology]{.text-(--ui-primary)} Solution Provider for Banks
   description: Transform your development with our personalized banking solutions.
