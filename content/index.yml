@@ -4,9 +4,9 @@ seo:
 title: Default & reliable technology partner for hundreds of banks. We are a [banking software solutions provider]{.text-(--ui-primary)} in India.
 description: ''
 hero:
-    images:
-      mobile: /images/macbook-mobile.svg
-      desktop: /images/macbook.svg
+  images:
+    mobile: /images/macbook-mobile.svg
+    desktop: /images/macbook.svg
 section:
   title: We are [Tuzzin Technology]{.text-(--ui-primary)} Solution Provider for Banks
   description: Transform your development with our personalized banking solutions.
@@ -29,32 +29,32 @@ features:
   features:
     - title: YoKYC
       description: Best in class automated CKYC Solution with in-built document management system.
-      icon: i-lucide-wand-sparkles
+      icon: i-ic-baseline-account-balance
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: YoInstaLoans
       description: Multi-channel Loan Origination System. Fully configurable and parameter-ized.
-      icon: i-lucide-bell-ring
+      icon: i-lucide-database
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: YoRecovery
       description: 360 Degree NPA Recovery tracking system with automated communication and smart alerts.
-      icon: i-lucide-code-xml
+      icon: i-lucide-recycle
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: YoCTS
       description: CTS Merge & Inward Clearing.
-      icon: i-lucide-moon
+      icon: i-lucide-banknote
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: YoLead
       description: Track every lead across Branches and respond to ever lead within 24 hours flat.
-      icon: i-lucide-mouse-pointer-2
+      icon: i-lucide-chart-no-axes-combined
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Much More...
       description: See what else we have got for you. Click Here!
-      icon: i-lucide-chart-line
+      icon: i-lucide-external-link
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
 steps:
