@@ -1,8 +1,8 @@
 seo:
   title: Tuzzin - Technology Buzzing
   description: Default & reliable technology partner for hundreds of banks. We are a banking software solutions provider in India.
-title: Default & reliable technology partner for hundreds of banks. We are a [banking software solutions provider]{.text-(--ui-primary)} in India.
-description: ''
+title: '[Banking Software Solutions]{.text-(--ui-primary)} Provider'
+description: Default & reliable technology partner for hundreds of banks. We are a banking software solutions provider in India.
 hero:
   images:
     mobile: /images/macbook-mobile.svg
@@ -58,92 +58,29 @@ features:
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
 steps:
-  title: Start coding smarter in [3 steps]{.text-(--ui-primary)}
-  description: Transform your development workflow with our AI-powered assistant.
-  items:
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
-      image:
-        light: /images/light/connect.svg
-        dark: /images/dark/connect.svg
-    - title: Track & Analyze
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
-      image:
-        light: /images/light/optimize.svg
-        dark: /images/dark/optimize.svg
-    - title: Optimize & Code Smarter
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
-      image:
-        light: /images/light/track.svg
-        dark: /images/dark/track.svg
+  title: 
+  description:
 pricing:
-  title: Choose your [productivity]{.text-(--ui-primary)} path
-  description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
+  title: 
+  description:
   plans:
-    - title: Pro Developer
-      description: Perfect for individual developers focused on maximizing productivity.
-      price: $199
-      features:
-        - AI productivity tracking to optimize your peak coding hours
-        - Smart distraction alerts to maintain deep focus
-        - Personal code snippet library for faster development
-        - Deep Work Mode with Pomodoro timer integration
-        - Performance analytics dashboard
-        - Priority email support
-      button:
-        label: Buy now
-        color: neutral
-        variant: outline
-        to: '#'
-    - title: Team Developer
-      description: For bootstrappers and indie hackers.
-      price: $199
-      features:
-        - Everything in Pro Developer
-        - Team productivity analytics and insights
-        - Collaborative code snippet sharing
-        - Cross-team performance tracking
-        - Synchronized deep work sessions
-        - Priority team support with dedicated manager
-      button:
-        label: Buy now
-        variant: subtle
-        to: '#'
+    - title: 9+
+      description: Solutions
+    - title: 100+
+      description: Banking Clients
+    - title: 17000+
+      description: Cups of Coffee
 testimonials:
-  title: Join thousands of productive [developers]{.text-(--ui-primary)}
-  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  title: GET IN TOUCH
+  description:
   items:
-    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
+    - quote: Our Locations  
       user:
-        name: Sarah Doe
-        description: Full Stack Developer
-        target: _blank
-        avatar:
-          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19
-    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
+        name: India - A-1118 The Capital, Science City Rd, Sola, Ahmedabad, Gujarat 380060 | USA - 1321 Upland Dr. 5140 Huston, TX77043
+        description: 
+    - quote: Call Us
       user:
-        name: Sébastien Doe
-        description: Lead Software Engineer
-        target: _blank
-        avatar:
-          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux
-    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
+        name: India - (091) 76240 98111 / (091) 84600 56525 | USA - (001) 63139 28099
+    - quote: Email Us
       user:
-        name: Benjamin Doe
-        description: Senior Frontend Developer
-        target: _blank
-        avatar:
-          src: https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac
-cta:
-  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
-  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
-  links:
-    - label: Buy now
-      to: https://ui.nuxt.com/pro/purchase
-      target: _blank
-      icon: i-lucide-shopping-cart
-    - label: License
-      to: https://ui.nuxt.com/getting-started/license
-      trailingIcon: i-lucide-circle-help
-      target: _blank
-      variant: subtle
+        name: experts@tuzz.in
