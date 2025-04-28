@@ -84,3 +84,16 @@ testimonials:
     - quote: Email Us
       user:
         name: experts@tuzz.in
+cta:
+  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
+  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
+  links:
+    - label: Buy now
+      to: https://ui.nuxt.com/pro/purchase
+      target: _blank
+      icon: i-lucide-shopping-cart
+    - label: License
+      to: https://ui.nuxt.com/getting-started/license
+      trailingIcon: i-lucide-circle-help
+      target: _blank
+      variant: subtle
