@@ -53,16 +53,16 @@ features:
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
     - title: Much More...
-      description: See what else we have got for you. Click Here!
+      description: See what else we have got for you.
       icon: i-lucide-external-link
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
 steps:
-  title: 
-  description:
+  title: ''
+  description: ''
 pricing:
-  title: 
-  description:
+  title: ''
+  description: ''
   plans:
     - title: 7+
       description: Solutions
@@ -72,12 +72,12 @@ pricing:
       description: Cups of Coffee
 testimonials:
   title: GET IN TOUCH
-  description:
+  description: ''
   items:
-    - quote: Our Locations  
+    - quote: Our Locations
       user:
         name: India - A-1118 The Capital, Science City Rd, Sola, Ahmedabad, Gujarat 380060 | USA - 1321 Upland Dr. 5140 Huston, TX77043
-        description: 
+        description: ''
     - quote: Call Us
       user:
         name: India - (091) 76240 98111 / (091) 84600 56525 | USA - (001) 63139 28099
