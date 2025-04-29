@@ -1,5 +1,5 @@
 <template>
-  <UDropdownMenu
+  <!-- <UDropdownMenu
     v-slot="{ open }"
     :modal="false"
     :items="[{
@@ -35,5 +35,5 @@
         trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
       }"
     />
-  </UDropdownMenu>
+  </UDropdownMenu> -->
 </template>

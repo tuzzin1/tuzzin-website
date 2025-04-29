@@ -15,8 +15,7 @@ useSeoMeta({
 <template>
   <div
     v-if="page"
-    class="relative"
-  >
+    class="relative">
     <div class="hidden lg:block">
       <UColorModeImage
         light="/images/light/line-1.svg"
@@ -27,7 +26,6 @@ useSeoMeta({
 
     <UPageHero
       :description="page.description"
-      :links="page.hero.links"
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
     >
       <template #title>
@@ -98,9 +96,12 @@ useSeoMeta({
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
 
     <UPageSection
-      id="steps"
-      :description="page.steps.description"
-      class="relative overflow-hidden"
+      id="pricing"
+      class="mb-1 overflow-hidden"
+      :title="page.pricing.title"
+      :description="page.pricing.description"
+      :plans="page.pricing.plans"
+      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
     >
       <template #headline>
         <UColorModeImage
@@ -109,45 +110,6 @@ useSeoMeta({
           class="absolute -top-10 sm:top-0 right-1/2 h-24"
         />
       </template>
-      <template #title>
-        <MDC :value="page.steps.title" />
-      </template>
-
-      <template #features>
-        <UPageCard
-          v-for="(step, index) in page.steps.items"
-          :key="index"
-          class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
-        >
-          <UColorModeImage
-            v-if="step.image"
-            :light="step.image?.light"
-            :dark="step.image?.dark"
-            :alt="step.title"
-            class="size-full"
-          />
-
-          <div class="flex flex-col gap-2">
-            <span class="text-lg font-semibold">
-              {{ step.title }}
-            </span>
-            <span class="text-sm text-(--ui-text-muted)">
-              {{ step.description }}
-            </span>
-          </div>
-        </UPageCard>
-      </template>
-    </UPageSection>
-
-    <UPageSection
-      id="pricing"
-      class="mb-32 overflow-hidden"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :plans="page.pricing.plans"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
-    >
       <template #title>
         <MDC :value="page.pricing.title" />
 
@@ -178,6 +140,8 @@ useSeoMeta({
       </UPricingPlans>
     </UPageSection>
 
+    <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
+
     <UPageSection
       id="testimonials"
       :title="page.testimonials.title"
@@ -202,11 +166,12 @@ useSeoMeta({
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
-            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
+            :ui="{description: 'text-center text-[22px] font-bold'}"
           >
             <template #footer>
               <UUser
                 v-bind="testimonial.user"
+                :ui="{name: 'text-center text-[15px] font-semibold'}"
                 size="xl"
               />
             </template>

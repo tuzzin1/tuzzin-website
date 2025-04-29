@@ -4,15 +4,15 @@ seo:
 title: '[Banking Software Solutions]{.text-(--ui-primary)} Provider'
 description: Default & reliable technology partner for hundreds of banks. We are a banking software solutions provider in India.
 hero:
-  images:
-    mobile: /images/macbook-mobile.svg
-    desktop: /images/macbook.svg
+  # images:
+  #   mobile: /images/macbook-mobile.svg
+  #   desktop: /images/macbook.svg
 section:
   title: We are [Tuzzin Technology]{.text-(--ui-primary)} Solution Provider for Banks
   description: Transform your development with our personalized banking solutions.
   images:
-    mobile: /images/macbook-mobile.svg
-    desktop: /images/macbook.svg
+    mobile: /images/tuzzin-home-page-img-01.jpg
+    desktop: /images/tuzzin-home-page-img-01.jpg
   features:
     - title: ''
       description: Tuzzin enables Technology Transformation for Banks in delivering absolute compliance, seamless customer experience, business efficiency and actionable insights. At Tuzzin we deliver Technology Outcomes- Affordable, Better and Faster.
@@ -57,9 +57,9 @@ features:
       icon: i-lucide-external-link
       ui:
         leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
-steps:
-  title: ''
-  description: ''
+# steps:
+#   title: ''
+#   description: ''
 pricing:
   title: ''
   description: ''
@@ -81,19 +81,21 @@ testimonials:
     - quote: Call Us
       user:
         name: India - (091) 76240 98111 / (091) 84600 56525 | USA - (001) 63139 28099
-    - quote: Email Us
+        description: ''
+    - quote: Email us | WhatsApp
       user:
-        name: experts@tuzz.in
+        name: experts@tuzz.in | 91-84600 56525
+        description: ''    
 cta:
-  title: Build your landing page with [Nuxt UI Pro]{.text-(--ui-primary)}
-  description: Nuxt UI Pro is free in development, but you need a license to use it in production.
+  title: GET IN [TOUCH]{.text-(--ui-primary)}
+  description:
   links:
-    - label: Buy now
-      to: https://ui.nuxt.com/pro/purchase
-      target: _blank
-      icon: i-lucide-shopping-cart
-    - label: License
-      to: https://ui.nuxt.com/getting-started/license
-      trailingIcon: i-lucide-circle-help
-      target: _blank
-      variant: subtle
+  #   - label: Buy now
+  #     to: https://ui.nuxt.com/pro/purchase
+  #     target: _blank
+  #     icon: i-lucide-shopping-cart
+  #   - label: License
+  #     to: https://ui.nuxt.com/getting-started/license
+  #     trailingIcon: i-lucide-circle-help
+  #     target: _blank
+  #     variant: subtle

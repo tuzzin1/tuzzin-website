@@ -1,52 +1,45 @@
 <script setup lang="ts">
+const { activeHeadings, updateHeadings } = useScrollspy()
+
 const columns = [{
-  label: 'Resources',
-  children: [{
-    label: 'Help center'
-  }, {
-    label: 'Docs'
-  }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
-  }]
+  label: 'Home',
+  to: '#home',
+  active: activeHeadings.value.includes('home')
 }, {
-  label: 'Features',
-  children: [{
-    label: 'Affiliates'
-  }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
-  }]
+  label: 'About',
+  to: '#about',
+  active: activeHeadings.value.includes('about')
 }, {
-  label: 'Company',
-  children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
-  }]
+  label: 'Solutions',
+  to: '#solutions',
+  active: activeHeadings.value.includes('solutions')
+}, {
+  label: 'News',
+  to: '#news',
+  active: activeHeadings.value.includes('news')
+}, {
+  label: 'Get in touch',
+  to: '#getintouch',
+  active: activeHeadings.value.includes('getintouch')
+}, {
+  label: 'Clients',
+  to: '#clients',
+  active: activeHeadings.value.includes('clients')
 }]
 
 const toast = useToast()
 
-const email = ref('')
-const loading = ref(false)
+// const email = ref('')
+// const loading = ref(false)
 
-function onSubmit() {
-  loading.value = true
+// function onSubmit() {
+//   loading.value = true
 
-  toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
-  })
-}
+//   toast.add({
+//     title: 'Subscribed!',
+//     description: 'You\'ve been subscribed to our newsletter.'
+//   })
+// }
 </script>
 
 <template>
@@ -59,7 +52,7 @@ function onSubmit() {
     <template #top>
       <UContainer>
         <UFooterColumns :columns="columns">
-          <template #right>
+          <!-- <template #right>
             <form @submit.prevent="onSubmit">
               <UFormField
                 name="email"
@@ -82,19 +75,20 @@ function onSubmit() {
                 </UInput>
               </UFormField>
             </form>
-          </template>
+          </template> -->
         </UFooterColumns>
       </UContainer>
     </template>
 
     <template #left>
       <p class="text-sm text-(--ui-text-muted)">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        <!-- Copyright © {{ new Date().getFullYear() }}. All rights reserved. -->
+        Copyright © 2020-{{ new Date().getFullYear() }}. Tuzzin Infotech Pvt. Ltd.
       </p>
     </template>
 
     <template #right>
-      <UButton
+      <!-- <UButton
         to="#"
         target="_blank"
         icon="i-simple-icons-discord"
@@ -117,7 +111,7 @@ function onSubmit() {
         aria-label="GitHub"
         color="neutral"
         variant="ghost"
-      />
+      /> -->
     </template>
   </UFooter>
 </template>
