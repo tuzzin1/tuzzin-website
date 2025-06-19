@@ -1,43 +1,45 @@
 <script setup lang="ts">
-const nuxtApp = useNuxtApp()
+// const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
   label: 'Home',
-  to: '#home',
-  active: activeHeadings.value.includes('home') && !activeHeadings.value.includes('about')
+  to: '/',
+  active: activeHeadings.value.includes('/') && !activeHeadings.value.includes('/about')
 }, {
   label: 'About',
-  to: '#about',
-  active: activeHeadings.value.includes('about')
+  to: '/about',
+  active: activeHeadings.value.includes('/about')
 }, {
   label: 'Solutions',
-  to: '#solutions',
-  active: activeHeadings.value.includes('solutions')
+  to: '/solutions',
+  active: activeHeadings.value.includes('/solutions')
 }, {
   label: 'News',
-  to: '#news',
-  active: activeHeadings.value.includes('news')
+  to: '/news',
+  active: activeHeadings.value.includes('/news')
 }, {
   label: 'Get in touch',
-  to: '#getintouch',
-  active: activeHeadings.value.includes('getintouch')
-}, {
-  label: 'Clients',
-  to: '#clients',
-  active: activeHeadings.value.includes('clients') && !activeHeadings.value.includes('getintouch')
-}])
+  to: '/getintouch',
+  active: activeHeadings.value.includes('/getintouch')
+}
+// , {
+//   label: 'Clients',
+//   to: '/clients',
+//   active: activeHeadings.value.includes('/clients') && !activeHeadings.value.includes('/getintouch')
+// }
+])
 
-nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#home'),
-    document.querySelector('#about'),
-    document.querySelector('#solutions'),
-    document.querySelector('#news'),
-    document.querySelector('#getintouch'),
-    document.querySelector('#clients')
-  ].filter(Boolean) as Element[])
-})
+// nuxtApp.hooks.hookOnce('page:finish', () => {
+//   updateHeadings([
+//     document.querySelector('#home'),
+//     document.querySelector('#about'),
+//     document.querySelector('#solutions'),
+//     document.querySelector('#news'),
+//     document.querySelector('#getintouch'),
+//     document.querySelector('#clients')
+//   ].filter(Boolean) as Element[])
+// })
 </script>
 
 <template>
@@ -54,7 +56,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <UNavigationMenu
         :items="items"
         variant="link"
-        class="hidden lg:block"
+        class="hidden lg:block px-4"
       />
 
       <!-- <UButton

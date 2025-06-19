@@ -71,25 +71,25 @@ pricing:
     - title: 17000+
       description: Cups of Coffee
 testimonials:
-  title: GET IN TOUCH
+  title: GET IN [TOUCH]{.text-(--ui-primary)}
   description: ''
   items:
     - quote: Our Locations
       user:
-        name: India - A-1118 The Capital, Science City Rd, Sola, Ahmedabad, Gujarat 380060 | USA - 1321 Upland Dr. 5140 Huston, TX77043
-        description: ''
+        name: India - A-1118 The Capital, Science City Rd, Sola, Ahmedabad, Gujarat 380060
+        description: 'USA - 1321 Upland Dr. #5140 Huston, TX77043'
     - quote: Call Us
       user:
-        name: India - (091) 76240 98111 / (091) 84600 56525 | USA - (001) 63139 28099
-        description: ''
+        name: India - (091) 76240 98111 / (091) 84600 56525
+        description: 'USA - (001) 63139 28099'
     - quote: Email us | WhatsApp
       user:
-        name: experts@tuzz.in | 91-84600 56525
-        description: ''    
-cta:
-  title: GET IN [TOUCH]{.text-(--ui-primary)}
-  description:
-  links:
+        name: experts@tuzz.in
+        description: '91-84600 56525'    
+# cta:
+#   title: GET IN [TOUCH]{.text-(--ui-primary)}
+#   description:
+#   links:
   #   - label: Buy now
   #     to: https://ui.nuxt.com/pro/purchase
   #     target: _blank

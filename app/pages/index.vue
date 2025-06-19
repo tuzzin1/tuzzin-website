@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { container } from '#build/ui';
+
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
@@ -23,7 +25,7 @@ useSeoMeta({
         class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
       />
     </div>
-
+    <!-- Header Part - Banking Software Solutions Provider  -->
     <UPageHero
       :description="page.description"
       :ui="{ container: 'md:pt-18 lg:pt-20' }"
@@ -35,7 +37,7 @@ useSeoMeta({
         />
       </template>
     </UPageHero>
-
+    <!-- We are Tuzzin Technology Solution Provider for Banks - Header -->
     <UPageSection
       :description="page.section.description"
       :features="page.section.features"
@@ -65,7 +67,7 @@ useSeoMeta({
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
-
+    <!-- Banking Solutions -->
     <UPageSection
       id="features"
       :description="page.features.description"
@@ -94,7 +96,7 @@ useSeoMeta({
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
-
+    <!-- COUNTS -->
     <UPageSection
       id="pricing"
       class="mb-1 overflow-hidden"
@@ -136,12 +138,14 @@ useSeoMeta({
           variant="soft"
           :features="plan.features"
           :button="plan.button"
+          :ui="{titleWrapper:'mx-auto font-bold', description:'mx-auto font-bold text-3xl text-(--ui-primary)'}"
         />
       </UPricingPlans>
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-(--ui-primary)/30' }" />
-
+    
+    <!-- GET IN TOUCH -->
     <UPageSection
       id="testimonials"
       :title="page.testimonials.title"
@@ -154,6 +158,19 @@ useSeoMeta({
           dark="/images/dark/line-5.svg"
           class="absolute -top-10 sm:top-0 right-1/2 h-24"
         />
+        <div class="hidden lg:block">
+        <!-- <div class="@max-[1280px]:hidden"> -->
+          <UColorModeImage
+            light="/images/light/line-6.svg"
+            dark="/images/dark/line-6.svg"
+            class="absolute left-5 -top-5 sm:top-0 h-full"
+          />
+          <UColorModeImage
+            light="/images/light/line-7.svg"
+            dark="/images/dark/line-7.svg"
+            class="absolute right-0 bottom-0 h-full"
+          />
+        </div>
       </template>
       <template #title>
         <MDC :value="page.testimonials.title" />
@@ -166,23 +183,26 @@ useSeoMeta({
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
-            :ui="{description: 'text-center text-[22px] font-bold'}"
+            :ui="{description: 'text-primary text-center text-[22px] font-bold text-transform: uppercase', wrapper:'mx-auto',}"
           >
             <template #footer>
               <UUser
                 v-bind="testimonial.user"
-                :ui="{name: 'text-center text-[15px] font-semibold'}"
+                :ui="{name: 'text-muted text-center text-[15px] font-semibold', description: 'text-muted text-center text-[15px] font-semibold mt-4', wrapper:'mx-auto'}"
                 size="xl"
               />
             </template>
           </UPageCard>
         </UPageColumns>
       </UContainer>
+      <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
+      
+      <LazyStarsBg />
     </UPageSection>
 
     <USeparator />
 
-    <UPageCTA
+    <!-- <UPageCTA
       v-bind="page.cta"
       variant="naked"
       class="overflow-hidden @container"
@@ -207,6 +227,6 @@ useSeoMeta({
       <div class="absolute rounded-full dark:bg-(--ui-primary) blur-[250px] size-40 sm:size-50 transform -translate-x-1/2 left-1/2 -translate-y-80" />
 
       <LazyStarsBg />
-    </UPageCTA>
+    </UPageCTA> -->
   </div>
 </template>

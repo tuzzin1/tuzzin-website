@@ -1,33 +1,35 @@
 <script setup lang="ts">
 const { activeHeadings, updateHeadings } = useScrollspy()
 
-const columns = [{
+const items = computed(() => [{
   label: 'Home',
-  to: '#home',
-  active: activeHeadings.value.includes('home')
+  to: '/',
+  active: activeHeadings.value.includes('/') && !activeHeadings.value.includes('/about')
 }, {
   label: 'About',
-  to: '#about',
-  active: activeHeadings.value.includes('about')
+  to: '/about',
+  active: activeHeadings.value.includes('/about')
 }, {
   label: 'Solutions',
-  to: '#solutions',
-  active: activeHeadings.value.includes('solutions')
+  to: '/solutions',
+  active: activeHeadings.value.includes('/solutions')
 }, {
   label: 'News',
-  to: '#news',
-  active: activeHeadings.value.includes('news')
+  to: '/news',
+  active: activeHeadings.value.includes('/news')
 }, {
   label: 'Get in touch',
-  to: '#getintouch',
-  active: activeHeadings.value.includes('getintouch')
-}, {
-  label: 'Clients',
-  to: '#clients',
-  active: activeHeadings.value.includes('clients')
-}]
+  to: '/getintouch',
+  active: activeHeadings.value.includes('/getintouch')
+}
+// , {
+//   label: 'Clients',
+//   to: '/clients',
+//   active: activeHeadings.value.includes('/clients') && !activeHeadings.value.includes('/getintouch')
+// }
+])
 
-const toast = useToast()
+// const toast = useToast()
 
 // const email = ref('')
 // const loading = ref(false)
@@ -51,7 +53,7 @@ const toast = useToast()
   <UFooter :ui="{ top: 'border-b border-(--ui-border)' }">
     <template #top>
       <UContainer>
-        <UFooterColumns :columns="columns">
+        <!-- <UFooterColumns :columns="items"> -->
           <!-- <template #right>
             <form @submit.prevent="onSubmit">
               <UFormField
@@ -76,7 +78,12 @@ const toast = useToast()
               </UFormField>
             </form>
           </template> -->
-        </UFooterColumns>
+        <!-- </UFooterColumns> -->
+        <UNavigationMenu
+          :items="items"
+          variant="link"
+          class="lg:block px-4"
+        />
       </UContainer>
     </template>
 
