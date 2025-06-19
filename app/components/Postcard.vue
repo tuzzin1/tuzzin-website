@@ -115,7 +115,7 @@
             {{ truncateDescription(post02.description, 30) }}
         </p>
         <NuxtLink
-            ::to="'/PostDetail-02'"
+            :to="'/PostDetail-02'"
             class="bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded"
         >
             Read More
